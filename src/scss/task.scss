@@ -1,0 +1,116 @@
+.task {
+    color: black;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    margin: 10px 0 10px;
+    padding: 10px 10px;
+    width: 100%;
+    height: 140px;
+    cursor: grab;
+    background-color: #e9e9e9;
+    &:hover {
+        background-color: #cdf8de;
+    }
+    &__text {
+        position: relative;
+        height: 60px;
+        z-index: 2;
+    }
+    &__title {
+        font-size: 12px;
+        font-weight: 500;
+        word-break: break-all;
+    }
+    &__info {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 3;
+    }
+    &__divider {
+        height: 1px;
+        width: 300px;
+        background-color: black;
+    }
+    &__subtitle {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    &__project {
+        font-size: 13px;
+        color: #38368f;
+    }
+    &__status {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: #418f36;
+    }
+    &__icons {
+        height: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__delete {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            i {
+                transform: scale(1.1);
+                color: rgb(212, 35, 35);
+            }
+        }
+    }
+    &__arrow {
+        position: absolute;
+        bottom: 2px;
+        right: 8px;
+        cursor: pointer;
+        &:hover {
+            i {
+                transform: scale(1.1);
+                color: #3baa64;
+            }
+        }
+    }
+    &__edit {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            i {
+                transform: scale(1.1);
+                color: #3baa64;
+            }
+        }
+    }
+    &__deleted {
+        color: red;
+    }
+}
+
+
+.task__increased {
+    .task__text {
+        height: 140px;
+    }
+    height: 220px;
+}
+.up {
+    .task__arrow {
+        transform: rotate(180deg);
+    }
+}
+.down {
+    .task__arrow {
+        transform: rotate(0);
+    }
+}

@@ -1,0 +1,15 @@
+.dashBoard {
+    margin: 0 auto;
+    margin-top: 120px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__done {
+        border-radius: 10px;
+        width: 340px;
+        box-shadow: 0 5px 15px #0000002f;
+        padding: 0 10px;
+        color: brown;
+    }
+}

@@ -1,0 +1,36 @@
+.statusList {
+    display: flex;
+    flex-direction: column;
+    color: #8d8d8d;
+    box-shadow: 0 5px 15px #8d8d8d;
+    border-radius: 10px;
+    width: 340px;
+    padding: 10px 10px;
+    // &__backlog {
+    //     color: #8d8d8d;
+    //     box-shadow: 0 5px 15px #8d8d8d;
+    //     border-radius: 10px;
+    //     width: 340px;
+    //     padding: 10px 10px;
+    // }
+    // &__inProgress {
+    //     color: #8d8d8d;
+    //     box-shadow: 0 5px 15px #8d8d8d;
+    //     border-radius: 10px;
+    //     width: 340px;
+    //     padding: 0 10px;
+    // }
+    // &__done {
+    //     color: #8d8d8d;
+    //     box-shadow: 0 5px 15px #8d8d8d;
+    //     border-radius: 10px;
+    //     width: 340px;
+    //     padding: 0 10px;
+    // }
+    &__title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+}
